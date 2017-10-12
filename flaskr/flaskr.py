@@ -62,6 +62,11 @@ def add_entry():
     return redirect(url_for('show_entries'))
 
 
+@app.route('/fools')
+def fools():
+    return 'You are fool !'
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
